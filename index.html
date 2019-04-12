@@ -13,18 +13,11 @@
 <body>
    
     <div id="vue-app">
-        <h1>Events</h1>
-        <button v-on:click.once="add(1)">+Add a year</button>
-        <button v-on:click="substract(1)">-Substract a year</button>
-        <button v-on:dblclick="add(10)">+Add ten year</button>
-        <button v-on:dblclick="substract(10)">-Substract ten year</button>
-        <p>My age is {{ age }}</p>
-
-        <div id="canvas" v-on:mousemove="updateXY">
-            {{X}},{{Y}}
-        </div>
-
-        <a v-on:click.prevent="click" href="https://github.com/q10viking">my github</a>
+        <h1>Keyboard Events</h1>
+        <label>Name:</label>
+        <input type="text" v-on:keyup.enter="logName" />
+        <label>Age:</label>
+        <input type="text" v-on:keyup.alt.enter="logAge" />
     </div>
     
 </body>
