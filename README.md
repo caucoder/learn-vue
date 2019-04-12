@@ -2,7 +2,7 @@
 ## learn vue lesson
 
 
-### [`start`](https://github.com/caucoder/learn-vue/tree/lesson1)
+### [`lesson1 start`](https://github.com/caucoder/learn-vue/tree/lesson1)
 
 
 
@@ -24,6 +24,7 @@
 
 1. v-bind: 也可以是 : ,讲vue对象的数据与标签属性绑定
 2. v-html: 将字符串转化为html
+3. 数据的key需要用双引号，而不是单引号
 
 
 
