@@ -55,7 +55,7 @@
 ### [`lesson8 computed properties`](https://github.com/caucoder/learn-vue/tree/lesson8)
 
 1. v-on:click="a++"
-2. 与methods的区别，computed更加高效，只调用数据发生改变的方法
+2. 与methods的区别，computed更加高效，只调用vue中数据发生改变的方法
 3. html中调用不需要括号
 
 
