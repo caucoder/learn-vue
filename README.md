@@ -126,8 +126,25 @@
 1. vue对象对应一个绑定的div,vue对象可以访问另外一个vue对象
 
 
+### [`lesson14 Intro to Components`](https://github.com/caucoder/learn-vue/tree/lesson14)
 
-
+1. 复用，template中访问数据，data定义是一个function
+    ```javascript
+    Vue.component("greeting", {
+        template: "<p>Hey {{name}}, I am a re-usable component. <button v-on:click='changeName'>change name</button></p>",
+        // data是function,每次返回一个新对象一遍template互不影响 
+        data: function(){ 
+            return{
+                name: 'Q10Viking'
+            }
+        },
+        methods: {
+            changeName: function(){
+                this.name = "huangzhuangzhuang"
+            }
+        }
+    });
+    ```
 
 ## Import Notes
 
