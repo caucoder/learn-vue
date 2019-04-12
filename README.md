@@ -80,6 +80,28 @@
 
 
 
+### [`lesson11 looping with v-for`](https://github.com/caucoder/learn-vue/tree/lesson11)
+
+1. v-for,循环该标签
+```html
+<li v-for="character in characters"> {{character}}</li>
+```
+2. 遍历对象list,以及遍历对象所有属性
+3. 遍历时带上index
+```html
+v-for="(ninja,index) in ninjas"
+```
+4. template标签在html中不会显示
+```html
+<template v-for="ninja in ninjas">
+    <div v-for="(val, key) in ninja">
+        <p>{{key}} - {{ val }}</p>
+    </div>
+    <hr />
+</template>
+```
+
+
 
 ## Import Notes
 
