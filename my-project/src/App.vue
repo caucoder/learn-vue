@@ -1,32 +1,32 @@
 <template>
-  <div >
-    <h1>{{title}}</h1>
-    <language></language>
+  <div>
+    <app-header></app-header>
+    <app-ninjas></app-ninjas>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-import language from './components/language.vue'
+
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
+import Ninjas from './components/Ninjas.vue';
 
 export default {
   components:{
-    'language': language
+    'app-header': Header,
+    'app-footer': Footer,
+    'app-ninjas': Ninjas
   },
   data(){
     return {
-      title: 'Your first Vue file, wooo!'
-    }
-  },
-  methods:{
-    greeting: function(){
-      return "Hello World,Hello Vue."
+   
     }
   }
+
 }
 </script>
 
 <style scoped>
-  h1{
-    color: purple;
-  }
+
 </style>

@@ -227,6 +227,15 @@ submit: function(){
 
 
 
+### [`lesson20 小项目-Nesting Components Examples`](https://github.com/caucoder/learn-vue/tree/lesson20)
+
+![](./show/components-ex.png)
+
+1. App.vue是root component,其他的Header,Ninjas,Footer组件，构成页面
+
+
+----------
+
 
 
 ## Import Notes
@@ -236,6 +245,11 @@ submit: function(){
     2. v-model
 2. vue->html,html渲染数据
     1. v-bind
+3. css样式中div，区块居中
+    ```css
+        /* 居中 */
+        margin: 40px auto;
+    ```
 
 
 ----------
