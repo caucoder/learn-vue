@@ -145,6 +145,10 @@
         }
     });
     ```
+2. html中使用
+    ```html
+    <greeting></greeting>
+    ```
 
 ## Import Notes
 
