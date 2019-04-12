@@ -176,7 +176,7 @@ submit: function(){
     npm run serve
     ```
 
-### [`lesson17 Vue Files & The Root Componen`](https://github.com/caucoder/learn-vue/tree/lesson16)
+### [`lesson17 Vue Files & The Root Component`](https://github.com/caucoder/learn-vue/tree/lesson16)
 
 1. 创建第一个vue-cli项目，并输出hello world
 2. 与之前相比，index.html中没有对main.js的显示声明使用.
