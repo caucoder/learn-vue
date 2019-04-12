@@ -106,6 +106,8 @@
 
 ### [`lesson12 小项目-Punchbag Game`](https://github.com/caucoder/learn-vue/tree/lesson12)
 
+![](show/punchGame.png)
+
 1. 做一个小项目巩固前面所学到的知识
 2. vue控制css显示都是听过true方式，html中图片处理也交给css
     ```html
