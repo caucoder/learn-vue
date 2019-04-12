@@ -58,7 +58,28 @@
 2. 与methods的区别，computed更加高效，只调用vue中数据发生改变的方法
 3. html中调用不需要括号
 
+### [`lesson9 dynamic css`](https://github.com/caucoder/learn-vue/tree/lesson9)
 
+
+1. v-bind语法决定标签是否使用css样式
+```html
+ <div v-bind:class="{red: false}"></div>
+```
+2. css文件定义了class（.available）的样式,在html中 v-bind:class="{available: available}",而vue可以通过控制第二个available的值
+
+3. 通过computed的形式进行设置
+
+
+
+
+## Import Notes
+
+1. html-> vue 改变vue的数据
+    1. event方法（调用方法，或者直接改变data）
+    2. v-model
+
+2. vue->html,html渲染数据
+    1. v-bind
 
 ## vscode插件
 
