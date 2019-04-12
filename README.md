@@ -36,6 +36,14 @@
 5. 在浏览器中开发者模式中观察console.log输出的信息，event
 
 
+### [`lesson5 events modifies`](https://github.com/caucoder/learn-vue/tree/lesson5)
+
+1. v-on:click.once 只允许点击一次生效
+2. v-on:click.prevent 如：链接，通过点击，阻止访问
+
+
+
+
 ## vscode插件
 
 1. Live Server
