@@ -13,14 +13,16 @@
 <body>
    
     <div id="vue-app-one">
-        <h2>{{title}}</h2>
-        <greeting></greeting>
+        <input type="text" ref="inputRef" v-bind:placeholder="prompt">
+        <button v-on:click="submit">submit</button>
+        <p>Your fav food: {{food}}</p>
+
+        <div ref="divRef">
+            I'm studying in CAU.
+        </div>
     </div>
 
-    <div id="vue-app-two">
-        <h2>{{title}}</h2>
-        <greeting></greeting>
-    </div>
+
 
     
 </body>

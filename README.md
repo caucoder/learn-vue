@@ -150,6 +150,23 @@
     <greeting></greeting>
     ```
 
+
+
+### [`lesson15 Refs`](https://github.com/caucoder/learn-vue/tree/lesson15)
+
+1. vue通过**this.$refs**引用html中标有**ref**的标签，我们通过console.log(this.$refs)打印的内容找到我们需要的信息
+```javascript
+//vue部分代码
+submit: function(){
+    // console.log(this.$refs.inputRef.value);
+    this.food = this.$refs.inputRef.value;
+    console.log(this.$refs.divRef.innerText);
+}  
+//html中input部分代码
+ <input type="text" ref="inputRef" v-bind:placeholder="prompt">
+```
+
+
 ## Import Notes
 
 1. html-> vue 改变vue的数据
