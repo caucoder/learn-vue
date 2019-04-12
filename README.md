@@ -245,12 +245,34 @@ submit: function(){
     2. v-model
 2. vue->html,html渲染数据
     1. v-bind
-3. css样式中div，区块居中
+
+
+## Css样式
+
+1. css样式中div，区块居中
     ```css
         /* 居中 */
         margin: 40px auto;
     ```
 
+2. 方块，样式 [`lesson20`](https://github.com/caucoder/learn-vue/tree/lesson20)
+    ```css
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li{
+        flex-grow: 1;
+        flex-basis: 300px;
+        text-align: center;
+        padding: 30px;
+        border: 1px solid #222;
+        margin: 10px;
+    }
+    ```
 
 ----------
 
