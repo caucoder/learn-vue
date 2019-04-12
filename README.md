@@ -62,44 +62,42 @@
 
 
 1. v-bind语法决定标签是否使用css样式
-```html
- <div v-bind:class="{red: false}"></div>
-```
+    ```html
+    <div v-bind:class="{red: false}"></div>
+    ```
 2. css文件定义了class（.available）的样式,在html中 v-bind:class="{available: available}",而vue可以通过控制第二个available的值
-
 3. 通过computed的形式进行设置
 
 ### [`lesson10 conditions`](https://github.com/caucoder/learn-vue/tree/lesson10)
 
 1. v-if,v-else-if,决定是否显示该标签
-
 2. v-show 与v-if不同在于，在page source里面，不显示是通过css样式控制，而v-if是直接没有该代码
-```html
-<p style="display: none;">Whooo,succuss :) </p>
-```
+    ```html
+    <p style="display: none;">Whooo,succuss :) </p>
+    ```
 
 
 
 ### [`lesson11 looping with v-for`](https://github.com/caucoder/learn-vue/tree/lesson11)
 
 1. v-for,循环该标签
-```html
-<li v-for="character in characters"> {{character}}</li>
-```
+    ```html
+    <li v-for="character in characters"> {{character}}</li>
+    ```
 2. 遍历对象list,以及遍历对象所有属性
 3. 遍历时带上index
-```html
-v-for="(ninja,index) in ninjas"
-```
+    ```html
+    v-for="(ninja,index) in ninjas"
+    ```
 4. template标签在html中不会显示
-```html
-<template v-for="ninja in ninjas">
-    <div v-for="(val, key) in ninja">
-        <p>{{key}} - {{ val }}</p>
-    </div>
-    <hr />
-</template>
-```
+    ```html
+    <template v-for="ninja in ninjas">
+        <div v-for="(val, key) in ninja">
+            <p>{{key}} - {{ val }}</p>
+        </div>
+        <hr />
+    </template>
+    ```
 
 
 
