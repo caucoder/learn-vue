@@ -58,7 +58,7 @@
 2. 与methods的区别，computed更加高效，只调用vue中数据发生改变的方法
 3. html中调用不需要括号
 
-### [`lesson9 dynamic css`](https://github.com/caucoder/learn-vue/tree/lesson9)
+### [`lesson9 dynamic css class`](https://github.com/caucoder/learn-vue/tree/lesson9)
 
 
 1. v-bind语法决定标签是否使用css样式
