@@ -13,12 +13,16 @@
 <body>
    
     <div id="vue-app">
-        <h1>{{ greeting('morning')}}</h1>
-        <p>name: {{ name }}</p>
-        <p>job: {{ job }}</p>
-        <p>github: <a v-bind:href=website>Q10Viking</a></p>
-        <p v-html="websiteTag"></p>
-        <input type="text" :value="job">
+        <h1>Events</h1>
+        <button v-on:click="add(1)">+Add a year</button>
+        <button v-on:click="substract(1)">-Substract a year</button>
+        <button v-on:dblclick="add(10)">+Add ten year</button>
+        <button v-on:dblclick="substract(10)">-Substract ten year</button>
+        <p>My age is {{ age }}</p>
+
+        <div id="canvas" v-on:mousemove="updateXY">
+            {{X}},{{Y}}
+        </div>
     </div>
     
 </body>

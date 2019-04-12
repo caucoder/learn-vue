@@ -27,9 +27,18 @@
 3. 数据的key需要用双引号，而不是单引号
 
 
+### [`lesson4 events`](https://github.com/caucoder/learn-vue/tree/lesson4)
+
+1. v-on: 常用事件click,dblclick,mousemove
+2. html通过vue事件调用方法
+3. 通过方法改变vue对象数据，然后在html中实时显示
+4. 事件方法，有参数则传递参数，没有则不用写括号
+5. 在浏览器中开发者模式中观察console.log输出的信息，event
+
 
 ## vscode插件
 
-１．　Live Server
+1. Live Server
+2. VueHelper
 
 
