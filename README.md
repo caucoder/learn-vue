@@ -210,6 +210,25 @@ submit: function(){
     ```
 4. 组件注册，然后使用
 
+
+
+
+
+### [`lesson19 components css`](https://github.com/caucoder/learn-vue/tree/lesson19)
+
+1. 将对应的css样式只使用在对应的vue template模板组件上，使用scoped（会在生成html代码时给标签加上属性值在css中对应）
+    ```html
+    <style scoped>
+    h1{
+    color: green;
+    }
+    </style>
+    ```
+
+
+
+
+
 ## Import Notes
 
 1. html-> vue 改变vue的数据

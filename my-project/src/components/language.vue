@@ -1,7 +1,10 @@
 <template>
-    <ul>
-        <li v-for="language in languages"> {{language}}</li>
-    </ul>
+  <div>
+      <h1>List Programmer languages</h1>
+      <ul>
+          <li v-for="language in languages" v-bind:key="language"> {{language}}</li>
+      </ul>
+  </div>
 </template>
 
 <script>
@@ -14,3 +17,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+h1{
+  color: green;
+}
+</style>
