@@ -69,8 +69,14 @@
 
 3. 通过computed的形式进行设置
 
+### [`lesson10 conditions`](https://github.com/caucoder/learn-vue/tree/lesson10)
 
+1. v-show 与v-if不同在于，在page source里面，不显示是通过css样式控制，而v-if是直接没有该代码
+```html
+<p style="display: none;">Whooo,succuss :) </p>
+```
 
+2. v-if,v-else-if
 
 ## Import Notes
 
@@ -80,6 +86,7 @@
 
 2. vue->html,html渲染数据
     1. v-bind
+
 
 ## vscode插件
 

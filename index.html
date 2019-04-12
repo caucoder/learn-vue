@@ -13,18 +13,16 @@
 <body>
    
     <div id="vue-app">
-        <h1>Dynamic CSS</h1>
-        <h1>Example-1</h1>
-        <div v-on:click="available = !available" v-bind:class="{available: available}">
-            <span>CAU</span>
-        </div>
+        <h1>Conditions</h1>
+        <button v-on:click="error = !error">Toggle error</button>
+        <button v-on:click="success = !success">Toggle success</button>
 
-        <h1>Example-2</h1>
-        <button  v-on:click="nearby = !nearby">Toggle nearby</button>
-        <button v-on:click="available = !available">Toggle available</button>
-        <div v-bind:class="computedClass">
-            <span>CIEE</span>
-        </div>
+        <p v-if="error">There has been an error</p>
+        <p v-else-if="success">Whooo,succuss :) </p>
+
+        <p v-show="error">There has been an error</p>
+        <p v-show="success">Whooo,succuss :) </p>
+    
     </div>
 
 
