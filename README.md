@@ -167,6 +167,18 @@ submit: function(){
 ```
 
 
+
+### [`lesson16 vue-cli`](https://github.com/caucoder/learn-vue/tree/lesson16)
+
+1. 使用vue-cli创建项目,cli(command line interface)
+    ```bash
+    vue create my-project
+    npm run serve
+    ```
+
+
+
+
 ## Import Notes
 
 1. html-> vue 改变vue的数据
