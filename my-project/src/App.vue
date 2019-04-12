@@ -1,13 +1,17 @@
 <template>
   <div >
     <h1>{{title}}</h1>
-    <p>{{greeting()}}</p>
+    <language></language>
   </div>
 </template>
 
 <script>
+import language from './components/language.vue'
 
 export default {
+  components:{
+    'language': language
+  },
   data(){
     return {
       title: 'Your first Vue file, wooo!'

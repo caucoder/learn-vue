@@ -176,13 +176,39 @@ submit: function(){
     npm run serve
     ```
 
-### [`lesson17 Vue Files & The Root Component`](https://github.com/caucoder/learn-vue/tree/lesson16)
+### [`lesson17 Vue Files & The Root Component`](https://github.com/caucoder/learn-vue/tree/lesson17)
 
 1. 创建第一个vue-cli项目，并输出hello world
 2. 与之前相比，index.html中没有对main.js的显示声明使用.
 3. main.js的vue对象是通过vue文件render而成的。
 
 
+
+
+### [`lesson18 Nesting components`](https://github.com/caucoder/learn-vue/tree/lesson18)
+
+1. App.vue is the root component
+2. component注册global全局方式，在main.js文件中
+    ```javascript
+    // 全局注册组件
+    
+    import language from './components/language.vue'
+    Vue.component('language',language);
+    
+    ```
+3. component注册local局部方式，如在App.vue中使用
+    ```javascript
+        <script>
+        import language from './components/language.vue'
+        export default {
+        components:{
+            'language': language
+        },
+        //...
+        }
+        </script>
+    ```
+4. 组件注册，然后使用
 
 ## Import Notes
 
