@@ -16,6 +16,9 @@
         <h1>{{ greeting('morning')}}</h1>
         <p>name: {{ name }}</p>
         <p>job: {{ job }}</p>
+        <p>github: <a v-bind:href=website>Q10Viking</a></p>
+        <p v-html="websiteTag"></p>
+        <input type="text" :value="job">
     </div>
     
 </body>
