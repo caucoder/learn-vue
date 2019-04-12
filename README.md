@@ -101,14 +101,32 @@
 
 
 
+----------
+
+
+### [`lesson12 小项目-Punchbag Game`](https://github.com/caucoder/learn-vue/tree/lesson12)
+
+1. 做一个小项目巩固前面所学到的知识
+2. vue控制css显示都是听过true方式，html中图片处理也交给css
+    ```html
+    <div id="bag" v-bind:class="{burst: end}">
+    ```
+3. 犯错
+    1. 在vue对象的方法中访问数据，一定要记得加上this
+
+
+
 ## Import Notes
 
 1. html-> vue 改变vue的数据
     1. event方法（调用方法，或者直接改变data）
     2. v-model
-
 2. vue->html,html渲染数据
     1. v-bind
+
+
+----------
+
 
 
 ## vscode插件
