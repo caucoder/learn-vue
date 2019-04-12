@@ -1,29 +1,31 @@
-new Vue({
-    el: '#vue-app',
+var one = new Vue({
+    el: '#vue-app-one',
     data: {
-        health: 100,
-        end: false
+        title: "one"
+    },
+    computed: {
+        greeting: function(){
+            return 'Hello, from app one :)';
+        }
+    }
+});
 
+
+
+var two = new Vue({
+    el: '#vue-app-two',
+    data: {
+        title: "two"
     },
     methods: {
-        punch: function(){
-            console.log('punch')
-            this.health -= 10;
-            if(this.health<=0){
-                this.end = true;
-            }
-
-        },
-        restart: function(){
-            console.log(this.end);
-            this.health = 100;
-            // 一定要记得加this
-            this.end = false;
-            
-            
+        changeTitle: function(){
+            one.title = "Change by Two";
         }
     },
     computed: {
-
+        greeting: function(){
+            return "你好，我是Two,I'm speaking to you";
+        }
     }
 });
+

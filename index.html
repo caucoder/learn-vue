@@ -12,25 +12,16 @@
 </head>
 <body>
    
-    <div id="vue-app">
-        <!-- bag img -->
-        <div id="bag" v-bind:class="{burst: end}">
-        </div>
-        
-        <!-- bag health -->
-        <div id="bag-health">
-            <div v-bind:style="{width: health+'%'}"></div>
-        </div>
-
-
-        <!-- game control buttons -->
-        <div id="controls">
-            <button v-on:click="punch" v-show="!end">Punch</button>
-            <button v-on:click="restart">Restart</button>
-        </div>
+    <div id="vue-app-one">
+        <h2>{{title}}</h2>
+        <p>{{greeting}}</p>
     </div>
 
-
+    <div id="vue-app-two">
+            <h2>{{title}}</h2>
+            <p>{{greeting}}</p>
+            <button v-on:click="changeTitle">Change one title</button>
+    </div>
 
     
 </body>

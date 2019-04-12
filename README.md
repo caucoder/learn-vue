@@ -118,6 +118,17 @@
 
 
 
+
+----------
+
+### [`lesson13 Multiple Vue Instances`](https://github.com/caucoder/learn-vue/tree/lesson13)
+
+1. vue对象对应一个绑定的div,vue对象可以访问另外一个vue对象
+
+
+
+
+
 ## Import Notes
 
 1. html-> vue 改变vue的数据
