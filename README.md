@@ -47,7 +47,10 @@
 1. keyup.enter
 2. keyup.alt.enter alt键与enter键结合
 
+### [`lesson7 Two-way data binding`](https://github.com/caucoder/learn-vue/tree/lesson7)
 
+
+1. 将html的数据，如input的内容绑定到vue对象中
 
 ## vscode插件
 

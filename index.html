@@ -15,9 +15,12 @@
     <div id="vue-app">
         <h1>Keyboard Events</h1>
         <label>Name:</label>
-        <input type="text" v-on:keyup.enter="logName" />
+        <input type="text" v-model="name" v-on:keyup.enter="logName" />
+        <span>{{name}}</span>
+        <br>
         <label>Age:</label>
-        <input type="text" v-on:keyup.alt.enter="logAge" />
+        <input type="text" v-model="age" v-on:keyup.alt.enter="logAge" />
+        <span>{{ age }}</span>
     </div>
     
 </body>
