@@ -52,6 +52,14 @@
 
 1. v-model='name' 将html的数据，如input的内容绑定到vue对象中
 
+### [`lesson8 computed properties`](https://github.com/caucoder/learn-vue/tree/lesson8)
+
+1. v-on:click="a++"
+2. 与methods的区别，computed更加高效，只调用数据发生改变的方法
+3. html中调用不需要括号
+
+
+
 ## vscode插件
 
 1. Live Server
