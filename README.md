@@ -2,7 +2,7 @@
 ## learn vue lesson
 
 
-### [`start`](https://github.com/caucoder/learn-vue/blob/lesson1/index.html)
+### [`start`](https://github.com/caucoder/learn-vue/blob/lesson1)
 
 
 <details>
@@ -15,7 +15,7 @@
 </details>
 
 
-### [`lesson2`](https://github.com/caucoder/learn-vue/blob/lesson2)
+### [`lesson2`](https://github.com/caucoder/learn-vue/tree/lesson2)
 
 <details>
 <summary>View 小结</summary>
