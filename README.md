@@ -253,6 +253,15 @@ submit: function(){
     }
     }
     ```
+4. props校验
+    ```javascript
+    props: {
+        ninjas:{
+            type: Array,
+            required: true
+        }
+    }
+    ```
 
 
 
@@ -261,6 +270,7 @@ submit: function(){
 1. html-> vue 改变vue的数据
     1. event方法（调用方法，或者直接改变data）
     2. v-model
+    3. ref
 2. vue->html,html渲染数据
     1. v-bind
 
