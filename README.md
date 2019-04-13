@@ -300,6 +300,13 @@ submit: function(){
     ```
 
 
+### [`lesson25 life cycle`](https://github.com/caucoder/learn-vue/tree/lesson25)
+
+![](./show/lifecycle.png)
+
+1. 基本了解life cycle,其中对应的function都可以在vue中定义，以便我们进行操作。
+2. mount是挂载到DOM中，在浏览器中显示
+
 
 ## Import Notes
 

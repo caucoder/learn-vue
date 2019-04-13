@@ -20,6 +20,7 @@ export default {
   },
   created(){
     bus.$on("titleChanged",(data)=>{
+      // alert("footer created")
       this.title = data;
     });
   }
