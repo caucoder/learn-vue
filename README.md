@@ -238,6 +238,24 @@ submit: function(){
 
 
 
+
+### [`lesson21 props`](https://github.com/caucoder/learn-vue/tree/lesson21)
+
+1. 组件属性，用于传递数据.组件只负责操作数据就好，如Ninjas.vue
+2. 组件的属性可以当做是data
+3. v-bind将传递的属性为数据绑定，而不是字符串
+    ```javascript
+    export default {
+    props: ['ninjas'],
+    data(){
+        return {
+        }
+    }
+    }
+    ```
+
+
+
 ## Import Notes
 
 1. html-> vue 改变vue的数据
