@@ -25,7 +25,7 @@
 1. v-bind: 也可以是 : ,讲vue对象的数据与标签属性绑定
 2. v-html: 将字符串转化为html
 3. 数据的key需要用双引号，而不是单引号
-
+4. 在props时也使用
 
 ### [`lesson4 events`](https://github.com/caucoder/learn-vue/tree/lesson4)
 
@@ -263,6 +263,12 @@ submit: function(){
     }
     ```
 
+
+### [`lesson22 primitive vs refer type`](https://github.com/caucoder/learn-vue/tree/lesson22)
+
+1. 原始数据类型与引用数据在template组件中的区别：
+    1. 原始数据类型不会影响不同template
+    2. 引用在template中会影响，因为数据都是来自同一个数据源
 
 
 ## Import Notes
