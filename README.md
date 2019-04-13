@@ -308,6 +308,19 @@ submit: function(){
 2. mount是挂载到DOM中，在浏览器中显示
 
 
+### [`lesson26 slot`](https://github.com/caucoder/learn-vue/tree/lesson26)
+
+1. 能够在组件中插入html代码，如： 在formHelper.vue中我们定义了form表单的基本骨骼，具体的内容以通过slot来进行填充
+    ```html
+    <!-- 要插入的slot -->
+    <div slot="name"></div>
+    <!-- 使用slot -->
+    <slot name="name"></slot>
+    ```
+
+
+
+
 ## Import Notes
 
 1. html-> vue 改变vue的数据
@@ -342,6 +355,19 @@ submit: function(){
         padding: 30px;
         border: 1px solid #222;
         margin: 10px;
+    }
+    ```
+
+3. ul,li样式
+    ```css
+    /* 去掉小黑点 */
+    #useful-links ul{
+        padding: 0;
+    }
+    /* li排列方式 */
+    #useful-links li{
+        display: inline-block;
+        margin-right: 10px;
     }
     ```
 
