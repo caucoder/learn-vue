@@ -278,11 +278,27 @@ submit: function(){
 2. 局部的template方法： 
     ```javascript
     this.$emit("changeTitle","Q10Viking learning vue");
-  ```
+    ```
 3. parent App.vue中监听该方法,注意传递的参数需要有$符号
     ```javascript
     <app-header v-bind:title="title" v-on:changeTitle="updateTitle($event)"></app-header>
     ```
+
+
+### [`lesson24 event bus`](https://github.com/caucoder/learn-vue/tree/lesson24)
+
+1. template局部数据传递不经过root,Header.vue的title改变直接通过bus vue对象传到了Footer.vue,而不需要经过App.vue
+2. bus 需要 export const bus = new Vue(); 使用 import { bus } from 'somewhere';
+3. bus绑定方法与数据 bus.$emit("functionname","data"); 
+4. bus使用需要定义在created中，使用bus.$on监听
+    ```javascript
+    created(){
+        bus.$on("titleChanged",(data)=>{
+        this.title = data;
+        });
+    }
+    ```
+
 
 
 ## Import Notes

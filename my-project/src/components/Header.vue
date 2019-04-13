@@ -6,6 +6,7 @@
 
 <script>
 
+import {bus} from '../main';
 
 export default {
   props:{
@@ -20,7 +21,9 @@ export default {
   },
   methods:{
     changeTitle(){
-      this.$emit("changeTitle","Q10Viking learning vue");
+      // this.$emit("changeTitle","Q10Viking learning vue");
+      this.title = "Q10Viking learning vue";
+      bus.$emit("titleChanged","Q10Viking learning vue");
     }
   }
 
