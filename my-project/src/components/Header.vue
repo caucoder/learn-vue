@@ -20,7 +20,7 @@ export default {
   },
   methods:{
     changeTitle(){
-      this.title = "Q10Viking learnig vue"
+      this.$emit("changeTitle","Q10Viking learning vue");
     }
   }
 

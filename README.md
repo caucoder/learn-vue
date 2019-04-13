@@ -271,6 +271,20 @@ submit: function(){
     2. 引用在template中会影响，因为数据都是来自同一个数据源
 
 
+
+### [`lesson23 primitive event`](https://github.com/caucoder/learn-vue/tree/lesson23)
+
+1. 局部的template改变原始数据类型，同步到parent的原始数据中。如改变Header.vue的title,直接影响到App.vue
+2. 局部的template方法： 
+    ```javascript
+    this.$emit("changeTitle","Q10Viking learning vue");
+  ```
+3. parent App.vue中监听该方法,注意传递的参数需要有$符号
+    ```javascript
+    <app-header v-bind:title="title" v-on:changeTitle="updateTitle($event)"></app-header>
+    ```
+
+
 ## Import Notes
 
 1. html-> vue 改变vue的数据
