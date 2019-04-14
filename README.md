@@ -319,6 +319,20 @@ submit: function(){
     ```
 
 
+### [`lesson27 dynamic components`](https://github.com/caucoder/learn-vue/tree/lesson27)
+
+1. 动态转化组件，在App.vue中，通过点击按钮，切换到不同的组件。
+2. component标签来进行维护一个组件变量，其中属性为is
+    ```html
+    <component v-bind:is="component"> </component>
+    ```
+3. maintain data,也就是在动态切换component中，该组件的vue对象不被销毁,keep-alive标签
+    ```html
+    <keep-alive>
+        <component v-bind:is="component"> </component>
+    </keep-alive>
+    ```
+
 
 
 ## Import Notes
