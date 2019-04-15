@@ -349,6 +349,18 @@ submit: function(){
 
 1. checkbox中的value 数据存储到 数组当中
 
+### [`lesson30 select box binding`](https://github.com/caucoder/learn-vue/tree/lesson30)
+
+1. select的value等于选的option，在这里option没有设置value,但是选择了它value就添加到select中了，value默认为遍历的author
+```html
+<select v-model="blog.author">
+    <option v-for="author in authors" v-bind:key="author">{{author}}</option>
+</select>
+```
+
+
+
+
 
 
 ## Import Notes
