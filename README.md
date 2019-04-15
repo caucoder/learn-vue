@@ -358,7 +358,7 @@ submit: function(){
 </select>
 ```
 
-### [`lesson31 http requests`](https://github.com/caucoder/learn-vue/tree/lesson31)
+### [`lesson31 http requests post`](https://github.com/caucoder/learn-vue/tree/lesson31)
 
 1.  安装一个插件[vue-resources](https://github.com/pagekit/vue-resource)
 2. 在main.js需要声明Vue对象使用该插件
