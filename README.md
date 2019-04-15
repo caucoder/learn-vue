@@ -376,6 +376,16 @@ submit: function(){
                 })
     ```
 
+### [`lesson32 http requests get`](https://github.com/caucoder/learn-vue/tree/lesson31)
+
+
+1. get请求获取post文章，然后显示出来
+
+
+
+
+
+
 ## Import Notes
 
 1. html-> vue 改变vue的数据
