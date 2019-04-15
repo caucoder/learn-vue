@@ -98,6 +98,10 @@
         <hr />
     </template>
     ```
+5. 为防止插件报错
+    ```html
+    <li v-for="character in characters" v-bind:key="character"> {{character}}</li>
+    ```
 
 
 
@@ -351,7 +355,7 @@ submit: function(){
 
 1. html-> vue 改变vue的数据
     1. event方法（调用方法，或者直接改变data）
-    2. v-model
+    2. v-model,v-model.lazy
     3. ref
 2. vue->html,html渲染数据
     1. v-bind
