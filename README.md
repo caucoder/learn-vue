@@ -340,6 +340,13 @@ submit: function(){
 2. data 返回的是对象blog，访问属性是blog.title
 
 
+
+### [`lesson29 checkbox binding`](https://github.com/caucoder/learn-vue/tree/lesson29)
+
+1. checkbox中的value 数据存储到 数组当中
+
+
+
 ## Import Notes
 
 1. html-> vue 改变vue的数据
