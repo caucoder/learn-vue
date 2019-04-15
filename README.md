@@ -358,10 +358,23 @@ submit: function(){
 </select>
 ```
 
+### [`lesson31 http requests`](https://github.com/caucoder/learn-vue/tree/lesson31)
 
-
-
-
+1.  安装一个插件[vue-resources](https://github.com/pagekit/vue-resource)
+2. 在main.js需要声明Vue对象使用该插件
+    ```javascript
+    import VueResource from 'vue-resource'
+    Vue.use(VueResource);
+    ```
+3. json数据提交测试地址[JsonPlaceHolder](http://jsonplaceholder.typicode.com/)
+4. 发送http-post请求
+    ```javascript
+    this.$http.post('http://jsonplaceholder.typicode.com/posts', {
+                    title: this.blog.title,
+                    body: this.blog.content,
+                    userId: 1
+                })
+    ```
 
 ## Import Notes
 
