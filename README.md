@@ -334,6 +334,11 @@ submit: function(){
     ```
 
 
+### [`lesson28 Input binding(create a blog-part1)`](https://github.com/caucoder/learn-vue/tree/lesson28)
+
+1. v-model.lazy,vue对象数据延迟显示，如input,在输入的时候只有回车，preview区域才显示。
+2. data 返回的是对象blog，访问属性是blog.title
+
 
 ## Import Notes
 
@@ -384,6 +389,13 @@ submit: function(){
         margin-right: 10px;
     }
     ```
+
+4. 显示为一行一个区块
+    ```css
+    display: block;
+    ```
+
+
 
 ----------
 
