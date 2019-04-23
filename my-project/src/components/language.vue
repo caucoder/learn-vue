@@ -1,6 +1,6 @@
 <template>
     <ul>
-        <li v-for="language in languages"> {{language}}</li>
+        <li v-for="language in languages" v-bind:key="language"> {{language}}</li>
     </ul>
 </template>
 
