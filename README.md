@@ -384,7 +384,42 @@ submit: function(){
 
 ### [`lesson33 custom driver`](https://github.com/caucoder/learn-vue/tree/lesson33)
 
-1. 
+> 自定义v-指示
+
+1. 全局定义，在main.js中定义全局的directive，使用bind方法，其中三个参数
+    ```javascript
+    //Custom directives
+    Vue.directive("rainbow",{
+    bind(el,binding,vnode){
+        el.style.color="#" + Math.random().toString().slice(2,8);
+        //el.style.color="red";
+    }
+    });
+
+
+    Vue.directive("theme",{
+    bind(el,binding,vnode){
+        //value
+        if(binding.value == "wide"){
+        el.style.maxWidth = "1200px";
+        }else if(binding.value == "narrow"){
+        el.style.maxWidth = "560px";
+        }
+        //arg
+        if(binding.arg == "column"){
+        el.style.background = "#ddd";
+        el.style.padding = "20px"; 
+        }
+    }
+    });
+    ```
+2. bind方法中el，代表那个标签，可以设置css，style属性
+3. bind方法中的binding，代表传递的参数，如value,arg
+```html
+ <!-- 注意字符串需要在双引号中用单引号 -->
+ <!-- narow是value,column是arg -->
+ <div v-theme:column="'narrow'">
+```
 
 
 
