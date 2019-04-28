@@ -423,6 +423,39 @@ submit: function(){
 
 
 
+### [`lesson34 custom driver`](https://github.com/caucoder/learn-vue/tree/lesson34)
+
+
+
+1. 过滤器，对内容进一步加工处理。
+2. 在main.js中声明自定义的过滤器。
+    ```javascript
+        //filter
+        Vue.filter("to-uppercase",function(value){
+        return value.toUpperCase();
+        });
+
+
+        Vue.filter("snippet",function(data){
+        return data.slice(0,100)+"... ..."
+        })
+    ```
+3. 在showBlogs.vue中使用，过滤器
+    ```javascript
+        <h2>{{ blog.title | to-uppercase }}</h2>
+        <article>{{ blog.body | snippet }}</article>
+    ```
+
+
+
+
+
+
+
+
+
+
+
 ## Import Notes
 
 1. html-> vue 改变vue的数据
