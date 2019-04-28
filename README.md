@@ -449,7 +449,26 @@ submit: function(){
 
 
 
+### [`lesson35 custom driver`](https://github.com/caucoder/learn-vue/tree/lesson35)
 
+
+> 自定义搜索过滤器
+
+1. 使用computed属性，通过绑定search内容，实时过滤，然后再遍历显示。
+    ```javascript
+    computed:{
+        filterBlogs: function(){
+            //数据过滤器带有filter
+            return this.blogs.filter((blog)=>{
+                //return false or true
+                return blog.title.match(this.search);
+            })
+        }
+    }
+    ```
+    ```javascript
+        v-for="blog in filterBlogs"
+    ```
 
 
 
