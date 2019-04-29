@@ -544,10 +544,29 @@ submit: function(){
     ```
         <router-link to="/" exact>Blog</router-link>
     ```
-2. exact表示route链接只激活一个，通过浏览器开发者模式，设置css样式
+2. **exact**表示route链接只激活一个，通过浏览器开发者模式，设置css样式
 
 
+### [`lesson40 Route Parameters`](https://github.com/caucoder/learn-vue/tree/lesson40)
 
+> route到vue组件，该vue组件通过自动调用created方法，我们在其中请求后台。表面是请求http://localhost:8080/#/blog/10，实际上是 http://jsonplaceholder.typicode.com/posts/10
+
+1. 在route.js中设置路由,注意不要省略冒号
+    ```javascript
+        {path: "/blog/:id",component: singleBlog}
+    ```
+2. 提取请求的参数
+    ```javascript
+        id: this.$route.params.id
+    ```
+3. 向后台发送请求，带上id参数
+    ```javascript
+        // http://localhost:8080/#/blog/10
+        this.$http.get('http://jsonplaceholder.typicode.com/posts/'+this.id).then(function(data){
+            console.log(data);
+            this.blog = data.body;
+        });
+    ```
 
 
 
