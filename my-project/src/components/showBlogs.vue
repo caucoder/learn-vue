@@ -7,7 +7,7 @@
             <router-link v-bind:to="'/blog/'+blog.id">
                 <h2>{{ blog.title | toUppercase }}</h2>   
             </router-link> 
-            <article>{{ blog.body | snippet }}</article>
+            <article>{{ blog.content | snippet }}</article>
         </div>
     </div>
 </template>
@@ -30,9 +30,17 @@ export default {
 
   },
   created(){
-      this.$http.get('http://jsonplaceholder.typicode.com/posts').then(function(data){
-          console.log(data);
-          this.blogs =  data.body.slice(0,10); 
+      this.$http.get('https://caucoder.firebaseio.com/posts.json').then(function(data){
+        //promisedObj
+        return data.json(); 
+      }).then(function(data){
+          var blogArrays = [];
+          for(let key in data){
+              data[key].id = key;
+              blogArrays.push(data[key]);
+          }
+          //console.log(blogArrays);
+          this.blogs = blogArrays;
       });
   },
   filters:{

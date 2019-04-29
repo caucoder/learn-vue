@@ -570,6 +570,47 @@ submit: function(){
 
 
 
+### [`lesson41 Posting to Firebase`](https://github.com/caucoder/learn-vue/tree/lesson41)
+
+[firebase](https://caucoder.firebaseio.com/posts.json)
+
+1. 将博客数据提交到firebase中，数据以json的形式存储起来
+```json
+{
+    "-LdbWFUhu89-h_JDYZRG": {
+        "author": "Q10Viking",
+        "categories": [
+            "ninjas"
+        ],
+        "content": "12345",
+        "title": "hello"
+    },
+    "-LdbWqitsD8MoEaAXLwb": {
+        "author": "Q10Viking",
+        "categories": [
+            "wizards"
+        ],
+        "content": "content learning vue",
+        "title": "q10viking"
+    }
+}
+```
+
+
+### [`lesson42 Retrieving Posts from Firebase`](https://github.com/caucoder/learn-vue/tree/lesson42)
+
+1. 从自己的[firebase](https://caucoder.firebaseio.com/posts.json)中获取数据并显示出来。
+2. 通过浏览器中的console中，观察取出数据的格式，然后转化为我们需要的数据格式
+![](show/blog-1.png)
+![](show/blog-2.png)
+![](show/blog-3.png)
+
+
+
+
+
+
+
 ## Import Notes
 
 1. html-> vue 改变vue的数据

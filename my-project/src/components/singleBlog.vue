@@ -1,7 +1,11 @@
 <template>
     <div>
         <h1>{{blog.title}}</h1>
-        <article>{{ blog.body}}</article>
+        <article>{{ blog.content}}</article>
+        <p>Author: {{blog.author}}</p>
+        <ul v-for="cat in blog.categories" v-bind:key="cat">
+            <li>{{cat}}</li>
+        </ul>
     </div>
 </template>
 
@@ -14,14 +18,17 @@ export default {
         }
     },
     created () {
-        this.$http.get('http://jsonplaceholder.typicode.com/posts/'+this.id).then(function(data){
-            console.log(data);
+        this.$http.get('https://caucoder.firebaseio.com/posts/'+this.id+".json").then(function(data){
+            //console.log(data);
             this.blog = data.body;
         });
     }
 }
 </script>
 
-<style>
-
+<style scoped>
+div{
+    margin: 0% auto;
+    text-align: center;
+}
 </style>
