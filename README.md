@@ -488,6 +488,31 @@ submit: function(){
         }
     ```
 
+### [`lesson37 Mixins`](https://github.com/caucoder/learn-vue/tree/lesson37)
+
+1. mixins属性，将computed方法独立出来放在searchMixin.js文件中，在showBlog.vue,showTitle.vue中都可以使用
+    ```javascript
+    export default {
+        computed: {
+            filterBlogs: function(){
+                return this.blogs.filter((blog) => {
+                    return blog.title.match(this.search);
+                });
+            }
+        }
+    };
+    ```
+2. 使用
+    ```javascript
+    //首先导入
+    import searchMixin from '../mixins/searchMixin';
+    //声明
+    mixins: [searchMixin]
+    ```
+
+
+
+
 ## Import Notes
 
 1. html-> vue 改变vue的数据

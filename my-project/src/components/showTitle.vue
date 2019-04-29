@@ -5,13 +5,11 @@
         <input type="text" placeholder="search blogs" v-model="search">
         <div v-for="blog in filterBlogs" v-bind:key="blog" class="single-blog">
             <h2 v-rainbow>{{ blog.title | toUppercase }}</h2>
-            <article>{{ blog.body | snippet }}</article>
         </div>
     </div>
 </template>
 
 <script>
-
 import searchMixin from '../mixins/searchMixin';
 
 export default {
@@ -30,6 +28,8 @@ export default {
   created(){
       this.$http.get('http://jsonplaceholder.typicode.com/posts').then(function(data){
           console.log(data);
+          console.log("hello");
+          
           this.blogs =  data.body.slice(0,10); 
       });
   },
