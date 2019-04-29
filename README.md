@@ -423,7 +423,7 @@ submit: function(){
 
 
 
-### [`lesson34 custom driver`](https://github.com/caucoder/learn-vue/tree/lesson34)
+### [`lesson34 filters`](https://github.com/caucoder/learn-vue/tree/lesson34)
 
 
 
@@ -449,7 +449,7 @@ submit: function(){
 
 
 
-### [`lesson35 custom driver`](https://github.com/caucoder/learn-vue/tree/lesson35)
+### [`lesson35 custom Search Filter`](https://github.com/caucoder/learn-vue/tree/lesson35)
 
 
 > 自定义搜索过滤器
@@ -470,10 +470,23 @@ submit: function(){
         v-for="blog in filterBlogs"
     ```
 
+### [`lesson36 Registering Things Locally`](https://github.com/caucoder/learn-vue/tree/lesson36)
 
-
-
-
+1. 在showBlogs.vue中声明过滤器，directive等
+    ```javascript
+        filters:{
+            toUppercase(value){
+                return value.toUpperCase();
+            }
+        },
+        directives:{
+            "rainbow": {
+                bind(el,binding,vnode){
+                    el.style.color = "#"+Math.random().toString(16).slice(2,6);
+                }
+            }
+        }
+    ```
 
 ## Import Notes
 
