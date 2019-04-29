@@ -538,8 +538,13 @@ submit: function(){
     > 以后在访问的时候会多出一个#符号，如 http://localhost:8080/#/
 
 
+### [`lesson39 Adding Router Links`](https://github.com/caucoder/learn-vue/tree/lesson39)
 
-
+1. 添加vue-route链接，在header.vue中添加导航nav
+    ```
+        <router-link to="/" exact>Blog</router-link>
+    ```
+2. exact表示route链接只激活一个，通过浏览器开发者模式，设置css样式
 
 
 
