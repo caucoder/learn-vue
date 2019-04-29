@@ -510,6 +510,39 @@ submit: function(){
     mixins: [searchMixin]
     ```
 
+### [`lesson38 Setting up Routing`](https://github.com/caucoder/learn-vue/tree/lesson38)
+
+1. 安装vue-router
+    ```
+    npm install vue-router --save
+    ```
+2. 在main.js中声明使用
+    ```
+        import VueRouter from 'vue-router'
+        Vue.use(VueRouter);
+        const router = new VueRouter({
+        routes: routes
+        });
+    ```
+3. 在vue中注册该router
+    ```
+        new Vue({
+            render: h => h(App),
+            router: router
+        }).$mount('#app')
+    ```
+4. 在App.vue中声明使用router-view标签
+    ```
+        <router-view></router-view>
+    ```
+    > 以后在访问的时候会多出一个#符号，如 http://localhost:8080/#/
+
+
+
+
+
+
+
 
 
 
