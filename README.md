@@ -170,7 +170,7 @@ submit: function(){
 
 ### [`lesson16 vue-cli`](https://github.com/caucoder/learn-vue/tree/lesson16)
 
-[在电脑上安装vue-cli](https://cli.vuejs.org/zh/guide/installation.html)
+> [在电脑上安装vue-cli](https://cli.vuejs.org/zh/guide/installation.html)
 
 1. 使用vue-cli创建项目,cli(command line interface)
     ```bash
