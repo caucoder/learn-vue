@@ -174,6 +174,11 @@ submit: function(){
 
 ### [`lesson16 vue-cli`](https://github.com/caucoder/learn-vue/tree/lesson16)
 
+[电脑上安装vue-cli](https://cli.vuejs.org/zh/guide/installation.html)
+```
+npm install -g @vue/cli
+```
+
 1. 使用vue-cli创建项目,cli(command line interface)
     ```bash
     vue create my-project
