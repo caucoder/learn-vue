@@ -218,6 +218,9 @@ npm install -g @vue/cli
         </script>
     ```
 4. 组件注册，然后使用
+```javascript
+<language></language>
+```
 
 
 
