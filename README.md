@@ -622,11 +622,49 @@ npm install -g @vue/cli
 ## 后续补充
 
 1. 路由切换
-```javascript
-this.$route.push("/")
-```
+    ```javascript
+    this.$route.push("/")
+    ```
 
+2. 动态添加路由信息
+    ```javascript
+    let routes = [
+        // { path: "/", component: helloWorld },
+        { path: "/login", name: "登录", component: LoginView }
+    ];
 
+    let router = new VueRouter({
+        routes: routes
+    });
+
+    // 动态添加路由信息
+    router.addRoutes([{ path: "/", component: helloWorld }])
+    ```
+3. 查看路由信息，但是通过addRoutes动态添加的路由信息看不见
+    ```javascript
+    console.log(router.options.routes);
+    ```
+4. 路由导航简化版,跳转到登录界面
+    ```javascript
+    router.beforeEach((to, from, next) => {
+        if (to.path == '/login') {
+            next()
+        }
+        let token = db.get('USER_TOKEN')
+        console.log(token)
+        let user = db.get('USER')
+        console.log(user)
+        
+        //表示登录成功
+        if (token.length && user) {
+            next();
+        } else {
+
+            next('/login')
+
+        }
+    })
+    ```
 
 
 ## Import Notes
