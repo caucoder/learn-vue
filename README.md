@@ -637,6 +637,7 @@ this.$route.push("/")
     3. ref
 2. vue->html,html渲染数据
     1. v-bind
+    2. v-html
 
 
 ## Css样式
