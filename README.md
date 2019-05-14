@@ -616,6 +616,16 @@ npm install -g @vue/cli
 -----------
 
 
+## 后续补充
+
+1. 路由切换
+```javascript
+this.$route.push("/")
+```
+
+
+
+
 ## Import Notes
 
 1. html-> vue 改变vue的数据
